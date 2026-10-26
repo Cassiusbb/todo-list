@@ -1,0 +1,29 @@
+// Neon palette
+$bg: #07040f;
+$bg-panel: #100a1f;
+$bg-raised: #190f31;
+
+$neon-green: #39ff14;
+$neon-pink: #ff2bd6;
+$neon-cyan: #00f0ff;
+$neon-yellow: #fcff3d;
+$neon-orange: #ff8a00;
+
+$text: #f4f0ff;
+$text-dim: #9a8fc4;
+
+$radius: 14px;
+
+@mixin glow($color, $size: 10px) {
+  box-shadow:
+    0 0 $size * 0.5 rgba($color, 0.55),
+    0 0 $size rgba($color, 0.45),
+    0 0 $size * 2.5 rgba($color, 0.25);
+}
+
+@mixin text-glow($color, $size: 8px) {
+  text-shadow:
+    0 0 $size * 0.4 rgba($color, 0.9),
+    0 0 $size rgba($color, 0.7),
+    0 0 $size * 2.5 rgba($color, 0.45);
+}
